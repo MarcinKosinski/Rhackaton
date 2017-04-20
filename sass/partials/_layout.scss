@@ -1,0 +1,30 @@
+/*===Simply flexbox with other side of wrap===*/
+.flex-l{
+  @include flexbox-all(flex-start);
+}
+
+.flex-r{
+  @include flexbox-all(flex-end); 
+}
+
+.flex-c{
+  @include flexbox-all(center);
+  margin: 0 auto;
+}
+
+/*=== column ===*/
+ .col-a{
+    @include item();
+    max-width: 600px;
+ }
+
+.col-test{
+  @include item();
+}
+
+ .col-flex{
+   @include item();
+   flex: 1; 
+//    przy trzech kolumnach flex:1 == lex-width: 33% idealne przy robieniu layoutu
+// z sidebar menu nav ktore ustawiamy na sztywno a content z np. prawej nam sie rozciąga bądź kurczr i na responsivie robimy display:none dla side bar
+ }

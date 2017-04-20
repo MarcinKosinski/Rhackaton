@@ -1,0 +1,311 @@
+@import 'singularitygs';
+@import 'partials/normalize';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/base';
+@import 'partials/layout';
+@import 'partials/timeline';
+
+header {
+	height: 680px;
+	background: url(../img/warsaw.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	  &:before {
+    content: '';
+    height: 680px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+  }
+  .title{
+  	position: relative;
+  	color: $titile-on-bg;
+  	margin: 0 auto;
+  	padding-top: 200px;
+  	font-size: 1.5em;  
+  	h1{
+	  font-family: 'Press Start 2P', cursive;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 500px;
+	  margin: 0 auto;
+	  text-align: center;
+	  animation: type 2s steps(60, end); 
+
+&:nth-child(2){
+  animation: type2 4s steps(60, end);
+}
+
+span{
+  animation: blink 1s infinite;
+}
+}
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0px;
+  max-height: 60px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1;
+  top: 0;
+  padding-bottom: 6px;
+}
+@media #{$phone} {
+  .navbar {
+    padding-top: 25px;
+  }
+}
+.open-nav {
+  max-height: 400px;
+  background-color: $accent-color;
+  opacity: .8;
+  .mobile-toggle {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+}
+.sticky {
+  background-color: #dc4225;
+  opacity: .8;
+  padding-top: 5px;
+  @media #{$phone} {
+  	padding-top: 17px;
+  }
+}
+
+// .sticky {
+//   background-color: rgba(255, 255, 255, 0.1);
+//   opacity: 1;
+//   top: 0px;
+//   border-bottom: 1px solid gainsboro;
+// }
+
+nav {
+  float: right;
+  width: 100%;
+  ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    float: right;
+    li {
+      display: inline-block;
+      margin-left: 35px;
+      line-height: 1.5;
+    }
+    a {
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 12px;
+      transition: all 0.3s ease-out;
+      border-bottom: none;
+      text-decoration: none;
+      &:hover {
+        color: #fce38a;
+      }
+    }
+  }
+}
+
+@media #{$phone} {
+  nav {
+    width: 100%;
+  }
+}
+
+@media #{$phone} {
+  nav ul {
+    padding-top: 40px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media #{$phone} {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: $titile-on-bg;
+    display: block;
+  }
+}
+
+@media #{$phone} {
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+.main-menu {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+// HEADER and NAV END!!
+.intro {
+	margin: 0 auto;
+	text-align: center;
+	.flex-c{
+		-webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+   align-items: flex-start;
+	}
+	.col-intro {
+		margin: .3em;
+		padding: .3em;
+		flex: 2;
+		@media #{$phone} {
+			flex:100%;
+			}
+	img {
+		max-width: 100%;
+	}
+}
+}
+
+.info {
+	height: 480px;
+	background: url(../img/daty.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
+	 &:before {
+    content: '';
+    height: 480px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+  	}
+  	 .title{
+  	position: relative;
+  	color: $titile-on-bg;
+  	margin: 0 auto;
+  	padding-top: 200px;
+  	font-size: 1.5em;
+  	h3 {
+  	  margin: 0 auto;
+  	  font-family: 'Press Start 2P', cursive;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 300px;
+	  animation: type 2s steps(60, end);
+	  	span{
+  			animation: blink 1s infinite;
+		}
+  	}
+  }
+}
+
+.agenda {
+	height: auto;
+}
+
+.registration {
+	height: 480px;
+	background: url(../img/rejestr.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	 &:before {
+    content: '';
+    height: 480px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+  }
+  .title{
+  	position: relative;
+  	color: $titile-on-bg;
+  	padding-top: 200px;
+  	font-size: 1.5em;
+  	h3 {
+  	  margin: 0 auto;
+  	  font-family: 'Press Start 2P', cursive;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 330px;
+	  animation: type 2s steps(60, end);
+	  	span{
+  			animation: blink 1s infinite;
+		}
+  	}
+  }
+}
+
+.tutorials{
+	margin: 0 auto;
+	text-align: center;
+	.col-t {
+		margin: .5em;
+		padding: 3em;
+		background: url(../img/tuto.png) no-repeat top;
+	}
+}
+
+footer{
+	.author{
+		padding: 15px;
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
