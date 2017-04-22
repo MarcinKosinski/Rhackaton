@@ -205,91 +205,94 @@ body { margin: 0 auto; padding: 0; width: 100%; }
 .col-flex { margin: 0.2em; padding: 0.2em; border: none; -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; flex: 1; }
 
 /* line 1, ../sass/partials/_timeline.scss */
+.agenda { height: auto; }
+
+/* line 5, ../sass/partials/_timeline.scss */
 .timeline { position: relative; width: 660px; margin: 0 auto; margin-top: 20px; padding: 1em 0; list-style-type: none; }
 
-/* line 10, ../sass/partials/_timeline.scss */
+/* line 14, ../sass/partials/_timeline.scss */
 .timeline:before { position: absolute; left: 50%; top: 0; content: ' '; display: block; width: 6px; height: 130%; margin-left: -3px; background: #505050; background: -moz-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8)); background: -webkit-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); background: -o-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); background: -ms-linear-gradient(top, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); z-index: -2; margin-top: -150px; }
 
-/* line 31, ../sass/partials/_timeline.scss */
+/* line 35, ../sass/partials/_timeline.scss */
 .timeline li { padding: 1em 0; }
 
-/* line 35, ../sass/partials/_timeline.scss */
+/* line 39, ../sass/partials/_timeline.scss */
 .timeline li:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
 
-/* line 43, ../sass/partials/_timeline.scss */
+/* line 47, ../sass/partials/_timeline.scss */
 .direction-l { position: relative; width: 300px; float: left; text-align: right; }
 
-/* line 50, ../sass/partials/_timeline.scss */
+/* line 54, ../sass/partials/_timeline.scss */
 .direction-r { position: relative; width: 300px; float: right; }
 
-/* line 56, ../sass/partials/_timeline.scss */
+/* line 60, ../sass/partials/_timeline.scss */
 .flag-wrapper { position: relative; display: inline-block; text-align: center; }
 
-/* line 63, ../sass/partials/_timeline.scss */
+/* line 67, ../sass/partials/_timeline.scss */
 .flag { position: relative; display: inline; background: #f8f8f8; padding: 6px 10px; border-radius: 5px; font-weight: 600; text-align: left; }
 
-/* line 74, ../sass/partials/_timeline.scss */
+/* line 78, ../sass/partials/_timeline.scss */
 .direction-l .flag { -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
 
-/* line 80, ../sass/partials/_timeline.scss */
+/* line 84, ../sass/partials/_timeline.scss */
 .direction-r .flag { -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15); }
 
-/* line 86, ../sass/partials/_timeline.scss */
+/* line 90, ../sass/partials/_timeline.scss */
 .direction-l .flag:before, .direction-r .flag:before { position: absolute; top: 50%; right: -40px; content: ' '; display: block; width: 12px; height: 12px; margin-top: -10px; background: #fff; border-radius: 10px; border: 4px solid #ff5050; z-index: 10; }
 
-/* line 102, ../sass/partials/_timeline.scss */
+/* line 106, ../sass/partials/_timeline.scss */
 .direction-r .flag:before { left: -40px; }
 
-/* line 106, ../sass/partials/_timeline.scss */
+/* line 110, ../sass/partials/_timeline.scss */
 .direction-l .flag:after { content: ""; position: absolute; left: 100%; top: 50%; height: 0; width: 0; margin-top: -8px; border: solid transparent; border-left-color: #f8f8f8; border-width: 8px; pointer-events: none; }
 
-/* line 120, ../sass/partials/_timeline.scss */
+/* line 124, ../sass/partials/_timeline.scss */
 .direction-r .flag:after { content: ""; position: absolute; right: 100%; top: 50%; height: 0; width: 0; margin-top: -8px; border: solid transparent; border-right-color: #f8f8f8; border-width: 8px; pointer-events: none; }
 
-/* line 134, ../sass/partials/_timeline.scss */
+/* line 138, ../sass/partials/_timeline.scss */
 .time-wrapper { display: inline; line-height: 1em; font-size: 0.66666em; color: #fa5050; vertical-align: middle; }
 
-/* line 143, ../sass/partials/_timeline.scss */
+/* line 147, ../sass/partials/_timeline.scss */
 .direction-l .time-wrapper { float: left; }
 
-/* line 147, ../sass/partials/_timeline.scss */
+/* line 151, ../sass/partials/_timeline.scss */
 .direction-r .time-wrapper { float: right; }
 
-/* line 151, ../sass/partials/_timeline.scss */
+/* line 155, ../sass/partials/_timeline.scss */
 .time { display: inline-block; padding: 4px 6px; background: #f8f8f8; }
 
-/* line 157, ../sass/partials/_timeline.scss */
+/* line 161, ../sass/partials/_timeline.scss */
 .desc { margin: 1em 0.75em 0 0; font-size: 0.77777em; font-style: italic; line-height: 1.5em; }
 
-/* line 165, ../sass/partials/_timeline.scss */
+/* line 169, ../sass/partials/_timeline.scss */
 .direction-r .desc { margin: 1em 0 0 0.75em; }
 
 /* ================ Timeline Media Queries ================ */
-@media screen and (max-width: 660px) { /* line 173, ../sass/partials/_timeline.scss */
+@media screen and (max-width: 660px) { /* line 177, ../sass/partials/_timeline.scss */
   .timeline { width: 100%; padding: 4em 0 1em 0; }
-  /* line 178, ../sass/partials/_timeline.scss */
-  .timeline li { padding: 2em 0; }
   /* line 182, ../sass/partials/_timeline.scss */
+  .timeline li { padding: 2em 0; }
+  /* line 186, ../sass/partials/_timeline.scss */
   .direction-l, .direction-r { float: none; width: 100%; text-align: center; }
-  /* line 190, ../sass/partials/_timeline.scss */
-  .flag-wrapper { text-align: center; }
   /* line 194, ../sass/partials/_timeline.scss */
+  .flag-wrapper { text-align: center; }
+  /* line 198, ../sass/partials/_timeline.scss */
   .flag { background: white; z-index: 15; }
-  /* line 199, ../sass/partials/_timeline.scss */
+  /* line 203, ../sass/partials/_timeline.scss */
   .direction-l .flag:before, .direction-r .flag:before { position: absolute; top: -30px; left: 50%; content: ' '; display: block; width: 12px; height: 12px; margin-left: -9px; background: #fff; border-radius: 10px; border: 4px solid #ff5050; z-index: 10; }
-  /* line 215, ../sass/partials/_timeline.scss */
+  /* line 219, ../sass/partials/_timeline.scss */
   .direction-l .flag:after, .direction-r .flag:after { content: ""; position: absolute; left: 50%; top: -8px; height: 0; width: 0; margin-left: -8px; border: solid transparent; border-bottom-color: white; border-width: 8px; pointer-events: none; }
-  /* line 230, ../sass/partials/_timeline.scss */
+  /* line 234, ../sass/partials/_timeline.scss */
   .time-wrapper { display: block; position: relative; margin: 4px 0 0 0; z-index: 14; }
-  /* line 237, ../sass/partials/_timeline.scss */
-  .direction-l .time-wrapper { float: none; }
   /* line 241, ../sass/partials/_timeline.scss */
-  .direction-r .time-wrapper { float: none; }
+  .direction-l .time-wrapper { float: none; }
   /* line 245, ../sass/partials/_timeline.scss */
+  .direction-r .time-wrapper { float: none; }
+  /* line 249, ../sass/partials/_timeline.scss */
   .desc { position: relative; margin: 1em 0 0 0; padding: 1em; background: whitesmoke; -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); z-index: 15; }
-  /* line 257, ../sass/partials/_timeline.scss */
+  /* line 261, ../sass/partials/_timeline.scss */
   .direction-l .desc, .direction-r .desc { position: relative; margin: 1em 1em 0 1em; padding: 1em; z-index: 15; } }
-@media screen and (min-width: 400px) and (max-width: 660px) { /* line 270, ../sass/partials/_timeline.scss */
+@media screen and (min-width: 400px) and (max-width: 660px) { /* line 274, ../sass/partials/_timeline.scss */
   .direction-l .desc, .direction-r .desc { margin: 1em 4em 0 4em; } }
 /* line 9, ../sass/style.scss */
 header { height: 680px; background: url(../img/warsaw.jpg) no-repeat center; background-size: cover; background-attachment: fixed; margin: 0; padding: 0; }
@@ -347,47 +350,60 @@ nav ul a:hover { color: #fce38a; }
 .main-menu { width: 100%; max-width: 1200px; margin: 0 auto; position: relative; padding: 0 2%; }
 
 /* line 186, ../sass/style.scss */
+.logo-small { width: 80px; height: 50px; background-image: url(../img/poztransp.png); background-repeat: no-repeat; background-position: center center; background-size: 100%; float: left; }
+
+/* line 200, ../sass/style.scss */
 .intro { margin: 0 auto; text-align: center; }
-/* line 189, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .intro .flex-c { -webkit-align-items: flex-start; -ms-flex-align: flex-start; align-items: flex-start; }
-/* line 194, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .intro .col-intro { margin: .3em; padding: .3em; flex: 2; }
-@media (max-width: 768px) { /* line 194, ../sass/style.scss */
+@media (max-width: 768px) { /* line 208, ../sass/style.scss */
   .intro .col-intro { flex: 100%; } }
-/* line 201, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .intro .col-intro img { max-width: 100%; }
 
-/* line 207, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
+.intro .title { position: relative; color: #000; margin: 0 auto; padding: 50px 0 50px 0; font-size: 1.5em; }
+/* line 228, ../sass/style.scss */
+.intro .title h3 { margin: 0 auto; font-family: 'Press Start 2P', cursive; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; width: 300px; animation: type 2s steps(60, end); }
+/* line 237, ../sass/style.scss */
+.intro .title h3 span { animation: blink 1s infinite; }
+
+/* line 246, ../sass/style.scss */
 .info { height: 480px; background: url(../img/daty.jpg) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; margin: 0 auto; text-align: center; margin: 0 auto; }
-/* line 216, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .info:before { content: ''; height: 480px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: linear-gradient(to bottom right, #002f4b, #dc4225); opacity: .6; }
-/* line 227, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .info .title { position: relative; color: #fff; margin: 0 auto; padding-top: 200px; font-size: 1.5em; }
-/* line 233, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .info .title h3 { margin: 0 auto; font-family: 'Press Start 2P', cursive; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; width: 300px; animation: type 2s steps(60, end); }
-/* line 242, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .info .title h3 span { animation: blink 1s infinite; }
 
-/* line 249, ../sass/style.scss */
-.agenda { height: auto; }
-
-/* line 253, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .registration { height: 480px; background: url(../img/rejestr.jpg) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; margin: 0 auto; text-align: center; }
-/* line 261, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .registration:before { content: ''; height: 480px; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: linear-gradient(to bottom right, #002f4b, #dc4225); opacity: .6; }
-/* line 272, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .registration .title { position: relative; color: #fff; padding-top: 200px; font-size: 1.5em; }
-/* line 277, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .registration .title h3 { margin: 0 auto; font-family: 'Press Start 2P', cursive; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; width: 330px; animation: type 2s steps(60, end); }
-/* line 286, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .registration .title h3 span { animation: blink 1s infinite; }
 
-/* line 293, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .tutorials { margin: 0 auto; text-align: center; }
-/* line 296, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
+.tutorials .title { position: relative; color: #000; margin: 0 auto; padding: 50px 0 50px 0; font-size: 1.5em; }
+/* line 343, ../sass/style.scss */
+.tutorials .title h3 { margin: 0 auto; font-family: 'Press Start 2P', cursive; font-weight: 600; text-transform: uppercase; white-space: nowrap; overflow: hidden; width: 300px; animation: type 2s steps(60, end); }
+/* line 352, ../sass/style.scss */
+.tutorials .title h3 span { animation: blink 1s infinite; }
+/* line 357, ../sass/style.scss */
 .tutorials .col-t { margin: .5em; padding: 3em; background: url(../img/tuto.png) no-repeat top; }
 
-/* line 304, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 footer .author { padding: 15px; }
-/* line 306, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 footer .author a { text-decoration: none; color: #000; }

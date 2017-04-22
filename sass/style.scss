@@ -182,7 +182,21 @@ nav {
   padding: 0 2%;
 }
 
+
+.logo-small {
+	width: 80px;
+	height: 50px;
+	background-image: url(../img/poztransp.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	float: left;
+	// background-color: white;
+}
+
 // HEADER and NAV END!!
+
+//Intro section start 
 .intro {
 	margin: 0 auto;
 	text-align: center;
@@ -204,6 +218,31 @@ nav {
 }
 }
 
+.intro {
+	.title{
+  	position: relative;
+  	color: $another-title;
+  	margin: 0 auto;
+  	padding: 50px 0 50px 0;
+  	font-size: 1.5em;
+  	h3 {
+  	  margin: 0 auto;
+  	  font-family: 'Press Start 2P', cursive;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 300px;
+	  animation: type 2s steps(60, end);
+	  	span{
+  			animation: blink 1s infinite;
+		}
+  	}
+  }
+}
+// Intro section end
+
+// Info section start
 .info {
 	height: 480px;
 	background: url(../img/daty.jpg) no-repeat center;
@@ -245,11 +284,11 @@ nav {
   	}
   }
 }
+// Info section end
 
-.agenda {
-	height: auto;
-}
+// !! Agenda section in placed in timeline.scss file
 
+// Register section start
 .registration {
 	height: 480px;
 	background: url(../img/rejestr.jpg) no-repeat center;
@@ -289,16 +328,42 @@ nav {
   	}
   }
 }
+// Register section end
 
+// Tutorials section start
 .tutorials{
 	margin: 0 auto;
 	text-align: center;
+	.title{
+  	position: relative;
+  	color: $another-title;
+  	margin: 0 auto;
+  	padding: 50px 0 50px 0;
+  	font-size: 1.5em;
+  	h3 {
+  	  margin: 0 auto;
+  	  font-family: 'Press Start 2P', cursive;
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 300px;
+	  animation: type 2s steps(60, end);
+	  	span{
+  			animation: blink 1s infinite;
+		}
+  	}
+  }
 	.col-t {
 		margin: .5em;
 		padding: 3em;
 		background: url(../img/tuto.png) no-repeat top;
 	}
 }
+
+// Tutorials section end
+
+// Footer section
 
 footer{
 	.author{
